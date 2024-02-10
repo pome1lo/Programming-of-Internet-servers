@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <h1>Task 5</h1>
+    <form id="Form">
+        <label for="x">X:</label>
+        <input type="text" id="x" name="x" required /><br><br>
+
+        <label for="y">Y:</label>
+        <input type="text" id="y" name="y" required /><br><br>
+
+        <button type="button" onclick="Send()">Send</button>
+    </form>
+    <br><br><h2 id="result"></h2>
+    <script>
+        function Send() {
+            var form = document.getElementById('Form');
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:5121/PAA/TASK5', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('result').innerHTML = 'Result: ' + xhr.responseText.toString();
+                }
+            };
+            xhr.send(formData);
+        }
+    </script>
+</body>
+</html>
