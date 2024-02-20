@@ -17,7 +17,6 @@ namespace lw1a.Client
         private void ButtonSend(object sender, RoutedEventArgs e)
         {
             _ = SendPostRequest();
-            MessageBox.Show("test");
         }
 
         private async Task SendPostRequest()

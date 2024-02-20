@@ -13,7 +13,7 @@ var app = builder.Build();
 
 
 //  TASK 1
-app.MapGet("PAA", context =>
+app.MapGet("{qm}.PAA", context =>
 {
     var parameterA = context.Request.Query["ParmA"];
     var parameterB = context.Request.Query["ParmB"];
@@ -27,7 +27,7 @@ app.MapGet("PAA", context =>
 
 
 //  TASK 2
-app.MapPost("PAA", context =>
+app.MapPost("{qm}.PAA", context =>
 {
     var form = context.Request.ReadFormAsync();
     var parameterA = form.Result["ParmA"];
@@ -42,7 +42,7 @@ app.MapPost("PAA", context =>
 
 
 //  TASK 3
-app.MapPut("PAA", context =>
+app.MapPut("{qm}.PAA", context =>
 {
     var form = context.Request.ReadFormAsync();
     var parameterA = form.Result["ParmA"];
