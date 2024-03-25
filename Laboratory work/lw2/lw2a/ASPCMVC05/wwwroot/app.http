@@ -1,7 +1,7 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
 
 @hostname=localhost
-@port=5123
+@port=9905
 GET http://{{hostname}}:{{port}}/Parm/Index
 ###
 GET http://{{hostname}}:{{port}}/Parm/Index/1

@@ -6,7 +6,6 @@ namespace ASPCMVC05.Controllers
 {
     public class ParmController : Controller
     {
-
         public IActionResult Index(string Id)
         {
             ViewBag.Id = Id;
@@ -24,7 +23,7 @@ namespace ASPCMVC05.Controllers
             ViewBag.Id = Id;
             return View();
         }
-        public IActionResult Uri03(int Id)
+        public IActionResult Uri03(float Id)
         {
             ViewBag.Id = Id;
             return View();
@@ -33,13 +32,6 @@ namespace ASPCMVC05.Controllers
         {
             ViewBag.Id = Id;
             return View();
-        }
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        } 
     }
 }

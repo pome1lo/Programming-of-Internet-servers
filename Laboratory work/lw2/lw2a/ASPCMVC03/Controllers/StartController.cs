@@ -8,19 +8,7 @@ namespace ASPCMVC03.Controllers
     {
         public IActionResult Index() => View();
         public IActionResult One() => View();
-
-
         public IActionResult Two() => View();
-
         public IActionResult Three() => View();
-
-
-
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

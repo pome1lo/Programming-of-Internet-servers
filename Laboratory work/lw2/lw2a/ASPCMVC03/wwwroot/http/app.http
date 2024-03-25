@@ -1,7 +1,7 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
 
 @hostname=localhost
-@port=5123
+@port=9903
 GET http://{{hostname}}:{{port}}/Start/Index
 ###
 GET http://{{hostname}}:{{port}}/Start/One
@@ -23,3 +23,13 @@ POST http://{{hostname}}:{{port}}/Start/Three
 GET https://www.belstu.by/ HTTP/1.1
 ###
 GET http://{{hostname}}:{{port}}/404/Test HTTP/1.1
+
+
+###
+POST http://example.com/api/resource HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+}

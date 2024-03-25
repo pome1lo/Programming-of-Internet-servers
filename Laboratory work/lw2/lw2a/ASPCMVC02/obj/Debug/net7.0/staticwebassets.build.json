@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "2Ya4iZ5gdapogoKslDVuQVCAZAnKFY63u1/3fgNdH2Q=",
+  "Hash": "qqoiSdgzA3CWxDPJE5eH1iiyoQyoM9nrtxv8aOpVKrw=",
   "Source": "ASPCMVC02",
   "BasePath": "_content/ASPCMVC02",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPCMVC02\\wwwroot",
+      "Source": "ASPCMVC02",
+      "ContentRoot": "D:\\FILES\\University\\3 course\\2term\\PIS\\Laboratory work\\lw2\\lw2a\\ASPCMVC02\\wwwroot\\",
+      "BasePath": "_content/ASPCMVC02",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\FILES\\University\\3 course\\2term\\PIS\\Laboratory work\\lw2\\lw2a\\ASPCMVC02\\wwwroot\\html\\page.html",
+      "SourceId": "ASPCMVC02",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FILES\\University\\3 course\\2term\\PIS\\Laboratory work\\lw2\\lw2a\\ASPCMVC02\\wwwroot\\",
+      "BasePath": "_content/ASPCMVC02",
+      "RelativePath": "html/page.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\page.html"
+    }
+  ]
 }
