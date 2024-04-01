@@ -16,10 +16,8 @@ app.UseStaticFiles();
 
 #endregion
 
-app.ConfigureM01Routes();
-app.ConfigureM02Routes();
-app.ConfigureM03Routes(); 
-app.ConfigureMXXRoutes(); 
+app.ConfigureRoutes(); 
+
 #region Configure the HTTP request pipeline.
 
 app.UseRouting();
